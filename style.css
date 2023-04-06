@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Anuphan:wght@400;700&display=swap');
+:root{
+    --bs-body-font-family: 'Anuphan', sans-serif;
+    --bs-border-width: 3px;
+}
+
+body{
+    font-family: 'Anuphan', sans-serif;
+}
+
+nav {
+    backdrop-filter: blur(0.5rem);
+}
+.active:before {
+    content: "→ ";
+}
+
+@media (min-width: 992px) {
+    .active:before {
+        content: "↓ ";
+    }
+}
+
+#fotografia{
+    background:blue url('https://picsum.photos/id/19/1500/800/?blur=2') no-repeat left top;
+    background-size:cover;
+}
